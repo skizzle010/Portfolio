@@ -7,6 +7,7 @@ import profilePic from "../../public/images/profile/developer-pic-1.png";
 import AnimatedText from "@/components/animatedtext";
 import Link from "next/link";
 import { LinkArrow } from "@/components/icon";
+import HireMe from "@/components/HireMe";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -42,12 +43,13 @@ export default function Home() {
                   border-2 border-solid border-transparent hover:border-dark"
                   download={true}
                 >
-                  Resume <LinkArrow className={"w-6 ml-1"}/>
+                  Resume <LinkArrow className={"w-6 ml-1"} />
                 </Link>
               </div>
             </div>
           </div>
         </Layout>
+        <HireMe/>
       </main>
     </>
   );
