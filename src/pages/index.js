@@ -50,6 +50,9 @@ export default function Home() {
           </div>
         </Layout>
         <HireMe/>
+        <div>
+          <Image src={} alt="Utkarsh" className="w-full h-auto" />
+        </div>
       </main>
     </>
   );
