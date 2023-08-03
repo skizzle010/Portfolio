@@ -8,6 +8,7 @@ import { useRef, useEffect } from "react";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
+import Education from "@/components/Education";
 
 const AnimateNumber = ({value})=>{
 const ref = useRef(null);
@@ -77,7 +78,7 @@ const about = () => {
             <div className="col-span-2 flex flex-col items-end  justify-between">
                 <div className="flex flex-col items-end justify-center">
                     <span className="inline-block text-7xl font-bold">
-                        <AnimateNumber value={5}/>+
+                        <AnimateNumber value={10}/>+
                     </span>
                     <h2 className="text-xl font-medium capitalize text-dark/75">Projects Completed</h2>
                 </div>
@@ -97,6 +98,7 @@ const about = () => {
           </div>
           <Skills/> 
           <Experience/>
+          <Education/>
         </Layout>
       </main>
     </>
