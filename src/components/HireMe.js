@@ -5,7 +5,7 @@
 
     const HireMe = () => {
     return (
-        <div className='fixed left-4 bottom-[-80%]'>
+        <div className='fixed left-4 bottom-4 flex items-center justify-center overflow-hidden'>
             <div className='w-48 h-auto flex items-center justify center relative dark:fill-light'>
                 <CircularText className={"fill-dark animate-spin-slow absolute"}/>
                 <Link href = 'mailto: raiutkarsh3219@gmail.com' className='flex items-center justify-center absolute left-1/2 top-[98]

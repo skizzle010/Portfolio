@@ -42,7 +42,7 @@ const about = () => {
       </Head>
       <main className="flex w-full flex-col items-center justify-center !tracking-tightest dark:text-light">
         <Layout classname="pt-16">
-          <AnimatedText text="Boundless  Tech  Pursuit." classname="mb-16" />
+          <AnimatedText text="Boundless Tech Pursuit." classname="mb-16" />
           <div className="grid w-full grid-cols-8 gap-16">
             <div className="col-span-3 flex flex-col items-start justofy-start">
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">

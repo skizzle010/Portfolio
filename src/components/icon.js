@@ -482,6 +482,21 @@ export const LinkArrow = ({ className, ...rest }) => (
   </svg>
 );
 
+
+
+export const MailIcon = (classname,...rest) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={30}
+    height={24}
+    viewBox="0 0 24 24"
+    {...rest}
+  >
+    <path d="M2.4 5.3c-.3.8-.4 4.3-.2 7.8l.3 6.4h19v-15l-9.3-.3C5 4 2.8 4.2 2.4 5.3zM20 6.5c0 .3-1.8 1.6-4 3L12 12 8 9.5c-2.2-1.4-4-2.7-4-3 0-.3 3.6-.5 8-.5s8 .2 8 .5zm-4 5L20 9v9H4V9l4 2.5 4 2.5 4-2.5z" />
+  </svg>
+)
+
+
 export const MediumIcon = (className,...rest) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"

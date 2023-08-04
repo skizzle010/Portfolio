@@ -107,7 +107,7 @@ const articles = () => {
       <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden">
         <Layout classname="pt-16">
           <AnimatedText
-            text="Words  Can  Change  The       World!"
+            text="Words Can Change The World!"
             classname="mb-16"
           />
           <ul className="grid grid-cols-2 gap-16">
