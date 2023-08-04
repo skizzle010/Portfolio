@@ -54,8 +54,8 @@ const MovingImage = ({ title, img, link }) => {
 
 const FeaturedArticle = ({ title, img, time, summary, link }) => {
   return (
-    <li className="relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl">
-      <div className=" absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl" />
+    <li className="relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl dark:border-light dark:bg-dark">
+      <div className=" absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl dark:bg-light" />
       <Link
         href={link}
         target="_blank"
@@ -69,12 +69,12 @@ const FeaturedArticle = ({ title, img, time, summary, link }) => {
         />
       </Link>
       <Link href={link} target="_blank">
-        <h2 className="capitalize text-2xl font-bold my-2 hover:underline mt-4">
+        <h2 className="capitalize text-2xl font-bold my-2 hover:underline mt-4 dark:text-light">
           {title}
         </h2>
       </Link>
-      <p className="text-sm mb-2">{summary}</p>
-      <span className=" text-primary font-semibold">{time}</span>
+      <p className="text-sm mb-2 dark:text-light">{summary}</p>
+      <span className=" text-primary font-semibold dark:text-primaryDark">{time}</span>
     </li>
   );
 };
@@ -86,10 +86,10 @@ const Article = ({ title, img, time, link }) => {
         whileInView={{y:0,transition:{duration:0.5,ease:"easeInOut"}}}
         viewport={{once:true}}
       className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark
-        first:mt-0 border border-solid border-dark border-r-4 border-b-4"
+        first:mt-0 border border-solid border-dark border-r-4 border-b-4 dark:bg-dark dark:border-light dark:text-light "
     >
       <MovingImage title={title} link={link} img={img} />
-      <span className="text-primary font-semibold pl-4">{time}</span>
+      <span className="text-primary font-semibold pl-4 dark:text-primaryDark">{time}</span>
     </motion.li>
   );
 };
@@ -125,7 +125,7 @@ const articles = () => {
               img={article1}
             />
           </ul>
-          <h2 className="font-bold text-4xl w-full text-center my-16 mt-32">
+          <h2 className="font-bold text-4xl w-full text-center my-16 mt-32 dark:text-light">
             All Articles
           </h2>
           <ul>

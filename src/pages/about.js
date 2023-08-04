@@ -80,19 +80,19 @@ const about = () => {
                     <span className="inline-block text-7xl font-bold">
                         <AnimateNumber value={10}/>+
                     </span>
-                    <h2 className="text-xl font-medium capitalize text-dark/75">Projects Completed</h2>
+                    <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">Projects Completed</h2>
                 </div>
                 <div className="flex flex-col items-end justify-center">
                     <span className="inline-block text-7xl font-bold">
                         <AnimateNumber value={2}/>+
                     </span>
-                    <h2 className="text-xl font-medium capitalize text-dark/75">Ongoing Projects</h2>
+                    <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">Ongoing Projects</h2>
                 </div>
                 <div className="flex flex-col items-end justify-center"> 
                     <span className="inline-block text-7xl font-bold">
                         <AnimateNumber value={1}/>+
                     </span>
-                    <h2 className="text-xl font-medium capitalize text-dark/75">years of experience</h2>
+                    <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">years of experience</h2>
                 </div>
             </div>
           </div>
