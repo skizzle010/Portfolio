@@ -72,7 +72,7 @@ const FeaturedArticle = ({ title, img, time, summary, link }) => {
         />
       </Link>
       <Link href={link} target="_blank">
-        <h2 className="capitalize text-2xl font-bold my-2 hover:underline mt-4 dark:text-light">
+        <h2 className="capitalize text-2xl font-bold my-2 hover:underline mt-4 dark:text-light xs:text-lg">
           {title}
         </h2>
       </Link>
@@ -89,10 +89,11 @@ const Article = ({ title, img, time, link }) => {
         whileInView={{y:0,transition:{duration:0.5,ease:"easeInOut"}}}
         viewport={{once:true}}
       className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark
-        first:mt-0 border border-solid border-dark border-r-4 border-b-4 dark:bg-dark dark:border-light dark:text-light "
+        first:mt-0 border border-solid border-dark border-r-4 border-b-4 dark:bg-dark dark:border-light dark:text-light 
+        sm:flex-col sm:self=start"
     >
       <MovingImage title={title} link={link} img={img} />
-      <span className="text-primary font-semibold pl-4 dark:text-primaryDark">{time}</span>
+      <span className="text-primary font-semibold pl-4 dark:text-primaryDark sm:pl-0 xs:text-sm sm:self-start">{time}</span>
     </motion.li>
   );
 };
@@ -108,9 +109,9 @@ const articles = () => {
         <Layout classname="pt-16">
           <AnimatedText
             text="Words Can Change The World!"
-            classname="mb-16"
+            classname="mb-16 lg:!text-xl md:!text-lg sm:!text-base xs:!text-xs "
           />
-          <ul className="grid grid-cols-2 gap-16">
+          <ul className="grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gap-y-16">
             <FeaturedArticle
               title="Build A Custom Pagination Component In Reactjs From Scratch"
               summary="Learn how to build a custom pagination component in ReactJS from scratch. 
@@ -133,19 +134,19 @@ const articles = () => {
           </h2>
           <ul>
             <Article
-              title="Testing demo title"
+              title="Understanding the concept of world education system and how it is affecting the world"
               time="7 min read"
               link="/"
               img={article3}
             />
             <Article
-              title="Testing demo title"
+              title="Testing the github potention on Iphone 6s plus and Iphone 7 plus " 
               time="7 min read"
               link="/"
               img={article3}
             />
             <Article
-              title="Testing demo title"
+              title="beating the crap out of react js and next js with lama dev only on youtube  "
               time="7 min read"
               link="/"
               img={article1}

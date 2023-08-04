@@ -45,7 +45,7 @@ const about = () => {
         <Layout classname="pt-16">
           <AnimatedText
             text="Boundless Tech Pursuit."
-            classname="mb-16 lg:!text-3xl sm:!text-2xl xs:!text-xl sm:mb-8"
+            classname="mb-16 lg:!text-3xl sm:!text-lg xs:!text-xs sm:mb-8"
           />
           <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
             <div className="col-span-3 flex flex-col items-start justofy-start xl:col-span-4 md:order-2 md:col-span-8">
