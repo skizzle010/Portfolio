@@ -73,7 +73,7 @@ const NavBar = () => {
     "
     >
       <button
-        className=" flex-col justify-center items-center hidden lg:flex"
+        className=" flex-col justify-center items-center hidden lg:flex "
         onClick={handleClick}
       >
         <span
@@ -93,7 +93,7 @@ const NavBar = () => {
         ></span>
       </button>
 
-      <div className="w-full flex justify-between items-center lg:hidden">
+      <div className="w-full flex justify-between items-center lg:hidden ">
       <nav>
         <CustomLink href="/" title="Home" className="mr-4 " />
         <CustomLink href="/about" title="About" className="mx-4" />
