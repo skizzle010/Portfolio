@@ -10,28 +10,29 @@ import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
 
-const AnimateNumber = ({value})=>{
-const ref = useRef(null);
+const AnimateNumber = ({ value }) => {
+  const ref = useRef(null);
 
-    const motionValue = useMotionValue(0);
-    const springValue = useSpring(motionValue,{duration: 3000})
-    const isInView = useInView(ref,{once:true});
+  const motionValue = useMotionValue(0);
+  const springValue = useSpring(motionValue, { duration: 3000 });
+  const isInView = useInView(ref, { once: true });
 
-    useEffect(()=>{
-        if(isInView){
-            motionValue.set(value)
-        }
-    },[isInView,value,motionValue]) 
-    
-    useEffect(()=>{
-        springValue.on("change",(latest)=>{
-            if(ref.current && latest.toFixed(0) <= value){
-                ref.current.textContent = latest.toFixed(0)
-            }
-        })},[springValue,value])
+  useEffect(() => {
+    if (isInView) {
+      motionValue.set(value);
+    }
+  }, [isInView, value, motionValue]);
 
-    return <span ref={ref}></span>
-}
+  useEffect(() => {
+    springValue.on("change", (latest) => {
+      if (ref.current && latest.toFixed(0) <= value) {
+        ref.current.textContent = latest.toFixed(0);
+      }
+    });
+  }, [springValue, value]);
+
+  return <span ref={ref}></span>;
+};
 
 const about = () => {
   return (
@@ -40,11 +41,14 @@ const about = () => {
         <title>Utkarsh Rai| About Page</title>
         <meta name="description" content="description about me" />
       </Head>
-      <main className="flex w-full flex-col items-center justify-center !tracking-tightest dark:text-light">
+      <main className="flex w-full flex-col items-center justify-center !tracking-tightest dark:text-light ">
         <Layout classname="pt-16">
-          <AnimatedText text="Boundless Tech Pursuit." classname="mb-16" />
-          <div className="grid w-full grid-cols-8 gap-16">
-            <div className="col-span-3 flex flex-col items-start justofy-start">
+          <AnimatedText
+            text="Boundless Tech Pursuit."
+            classname="mb-16 lg:!text-3xl sm:!text-2xl xs:!text-xl sm:mb-8"
+          />
+          <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
+            <div className="col-span-3 flex flex-col items-start justofy-start xl:col-span-4 md:order-2 md:col-span-8">
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
                 About Me
               </h2>
@@ -54,8 +58,9 @@ const about = () => {
                 functional and user-centered digital experiences.
               </p>
               <p className="font-medium my-4">
-                I am a pre final year student pursuing B.Tech in Computer Science
-                and Engineering from Vellore Institute of Technology, Vellore.
+                I am a pre final year student pursuing B.Tech in Computer
+                Science and Engineering from Vellore Institute of Technology,
+                Vellore.
               </p>
               <p className="font-medium">
                 Passionate about programming since my earliest encounter with a
@@ -70,37 +75,53 @@ const about = () => {
                 reality.
               </p>
             </div>
-            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark
-            bg-light p-8 dark:bg-dark dark:border-light">
-                <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light"/>
-                <Image src={profilePic} alt='profile pic' className='w-full h-auto rounded-2xl'priority 
-              sizes="(max-width: 768px) 100vw,
-              (max-width: 1200px) 50vw,33vw" /> 
+            <div
+              className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark
+            bg-light p-8 dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8"
+            >
+              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light " />
+              <Image
+                src={profilePic}
+                alt="profile pic"
+                className="w-full h-auto rounded-2xl"
+                priority
+                sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,33vw"
+              />
             </div>
-            <div className="col-span-2 flex flex-col items-end  justify-between">
-                <div className="flex flex-col items-end justify-center">
-                    <span className="inline-block text-7xl font-bold">
-                        <AnimateNumber value={10}/>+
-                    </span>
-                    <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">Projects Completed</h2>
-                </div>
-                <div className="flex flex-col items-end justify-center">
-                    <span className="inline-block text-7xl font-bold">
-                        <AnimateNumber value={2}/>+
-                    </span>
-                    <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">Ongoing Projects</h2>
-                </div>
-                <div className="flex flex-col items-end justify-center"> 
-                    <span className="inline-block text-7xl font-bold">
-                        <AnimateNumber value={1}/>+
-                    </span>
-                    <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">years of experience</h2>
-                </div>
+            <div className="col-span-2 flex flex-col items-end  justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3">
+              <div className="flex flex-col items-end justify-center xl:items-center">
+                <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:-4xl">
+                  <AnimateNumber value={10} />+
+                </span>
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base
+                xs:text-sm">
+                  Projects Completed
+                </h2>
+              </div>
+              <div className="flex flex-col items-end justify-center xl:items-center">
+                <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:-4xl">
+                  <AnimateNumber value={2} />+
+                </span>
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base
+                xs:text-sm">
+                  Ongoing Projects
+                </h2>
+              </div>
+              <div className="flex flex-col items-end justify-center xl:items-center">
+                <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:-4xl">
+                  <AnimateNumber value={1} />+
+                </span>
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base
+                xs:text-sm">
+                  years of experience
+                </h2>
+              </div>
             </div>
           </div>
-          <Skills/> 
-          <Experience/>
-          <Education/>
+          <Skills />
+          <Experience />
+          <Education />
         </Layout>
       </main>
     </>
