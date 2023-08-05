@@ -5,9 +5,9 @@ import Head from "next/head";
 import Link from "next/link";
 import { GithubIcon } from "@/components/icon";
 import Image from "next/image";
-import hackstory from "../../public/images/Projects/hackstory.png";
-import expensage from "../../public/images/Projects/expensage.png";
-import linkFy from "../../public/images/Projects/linkFy.png";
+import hackstory from "../../public/images/projects/hackstory.png";
+import expensage from "../../public/images/projects/expensage.png";
+import linkFy from "../../public/images/projects/linkFy.png";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
 
