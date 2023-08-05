@@ -37,7 +37,7 @@ export default function Home() {
             <div className="w-1/2 flex flex-col items-center self-center lg:w-full ">
               <AnimatedText
                 text="Crafting digital Experiences"
-                classname="!text-xl !text-left font-bold break-normal xl:!text-lg lg:!text-lg md:!text-lg sm:!text-sm xs:!text-xs"
+                classname="!text-xl !text-left font-bold break-normal xl:!text-lg lg:!text-lg md:!text-lg sm:!text-xs xs:!text-xs"
               />
               <p className="my-4 text-base font-medium md:text-sm sm:text-sx">
                 As a full-stack developer, I revel in the art of turning

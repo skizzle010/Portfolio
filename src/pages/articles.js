@@ -111,7 +111,7 @@ const articles = () => {
         <Layout classname="pt-16">
           <AnimatedText
             text="Words Can Change The World!"
-            classname="mb-16 lg:!text-xl md:!text-lg sm:!text-base xs:!text-xs "
+            classname="mb-16 lg:!text-xl md:!text-lg sm:!text-xs xs:!text-xs "
           />
           <ul className="grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gap-y-16">
             <FeaturedArticle
