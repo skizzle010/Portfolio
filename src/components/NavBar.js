@@ -73,7 +73,7 @@ const NavBar = () => {
     "
     >
       <button
-        className=" flex-col justify-center items-center hidden lg:flex "
+        className=" flex-col justify-center items-center hidden lg:flex " 
         onClick={handleClick}
       >
         <span
@@ -228,7 +228,7 @@ const NavBar = () => {
 
 
 
-      <div className="absolute left-[50%] top-2 translate-x-[-50%]">
+      <div className="absolute left-[50%] top-2 translate-x-[-50%] sm:hidden">
         <Logo />
       </div>
     </header>
