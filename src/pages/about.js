@@ -39,7 +39,7 @@ const about = () => {
   return (
     <>
       <Head>
-        <title>Utkarsh Rai| About Page</title>
+        <title>Utkarsh Rai | About Page</title>
         <meta name="description" content="description about me" />
       </Head>
       <TransitionEffect />

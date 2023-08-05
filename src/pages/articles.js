@@ -103,7 +103,7 @@ const articles = () => {
   return (
     <>
       <Head>
-        <title>Utkarsh Rai| About Page</title>
+        <title>Utkarsh Rai | Articles Page</title>
         <meta name="description" content="description about articles" />
       </Head>
       <TransitionEffect />
