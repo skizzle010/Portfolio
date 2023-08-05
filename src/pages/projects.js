@@ -10,6 +10,7 @@ import expensage from "../../public/images/projects/expensage.png";
 import linkFy from "../../public/images/projects/linkFy.png";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
+import ecoFy from "../../public/images/projects/ecoFy.png";
 
 const FramerImage = motion(Image);
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
@@ -163,7 +164,7 @@ const Projects = () => {
                 type="E-Website"
                 title="EcoFY"
                 link="https://github.com/skizzle010/EcoFy"
-                img={hackstory}
+                img={ecoFy}
                 github="https://github.com/skizzle010/Yantra_hack-frontend"
               />
             </div>
