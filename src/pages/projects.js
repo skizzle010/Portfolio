@@ -9,6 +9,7 @@ import hackstory from "../../public/images/Projects/hackstory.png";
 import expensage from "../../public/images/Projects/expensage.png";
 import linkFy from "../../public/images/Projects/linkFy.png";
 import { motion } from "framer-motion";
+import TransitionEffect from "@/components/TransitionEffect";
 
 const FramerImage = motion(Image);
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
@@ -128,6 +129,7 @@ const Projects = () => {
         <title>Utkarsh Rai| Projects Page</title>
         <meta name="description" content="description about my Projects" />
       </Head>
+      <TransitionEffect />
       <main classnaem="w-full mb-16 flex flex-col items-center justife-center">
         <Layout classname="pt-16">
           <AnimatedText

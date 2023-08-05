@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 import article3 from "../../public/images/articles/create modal component in react using react portals.png";
 import { useRef } from "react";
 import { useMotionValue } from "framer-motion";
+import TransitionEffect from "@/components/TransitionEffect";
 
 const FramerImage = motion(Image);
 
@@ -105,6 +106,7 @@ const articles = () => {
         <title>Utkarsh Rai| About Page</title>
         <meta name="description" content="description about articles" />
       </Head>
+      <TransitionEffect />
       <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden">
         <Layout classname="pt-16">
           <AnimatedText
